@@ -40,14 +40,18 @@ namespace DevExpressWindowsFormApp1
             if (username.Length < 3)
             {
                 MessageBox.Show("Kullanıcı adınız en az 3 karakterden oluşmalıdır. ", "Geçersiz Kullanıcı Adı", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
             }
             else if (username.Length > 20)
             {
                 MessageBox.Show("Kullanıcı adınız en falza 20 karakterden oluşmalıdır. ", "Geçersiz Kullanıcı Adı", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
             }
             else if (!Regex.IsMatch(username, "^[a-zA-Z0-9ğüşıöçĞÜŞİÖÇ]+$")) // bu kısım semboller hariç tüm karakterlere izin verir. regex kullanarak yapıyoruz.
             {
+
                 MessageBox.Show("Kullanıcı adınız sembol/özel karakter içermemelidir. ", "Geçersiz Kullanıcı Adı", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
             }
 
             string eposta = EpostaTextEdit.Text;
@@ -55,6 +59,7 @@ namespace DevExpressWindowsFormApp1
             if (!Regex.IsMatch(eposta, @"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"))
             {
                 MessageBox.Show("Geçersiz E-posta girdiniz! ", "Geçersiz E-posta", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
             }
 
 
@@ -70,21 +75,25 @@ namespace DevExpressWindowsFormApp1
             if (password != passwordAgain)
             {
                 MessageBox.Show("Hayır şifreler uyuşmuyor!", "Sonuç", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
             }
             else if (string.IsNullOrWhiteSpace(password) || string.IsNullOrWhiteSpace(passwordAgain))
             {
 
                 MessageBox.Show("Şifre boş olamaz.", "Sonuç", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
             }
             else if (password.Length < 10 || password.Length > 25)
             {
 
                 MessageBox.Show("Şifreniz 10 karakterden kısa, 25 karakterden uzun olmamalıdır.", "Sonuç", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
             }
-            else
-            {
-                MessageBox.Show("Hesap başarıyla oluşturuldu.", "Sonuç", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
+            //else
+            //{
+            //    MessageBox.Show("Hesap başarıyla oluşturuldu.", "Sonuç", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //    return;
+            //}
 
 
 
@@ -121,6 +130,15 @@ namespace DevExpressWindowsFormApp1
             }
             
             MessageBox.Show("Hesap başarıyla oluşturuldu ve veritabanına kaydedildi.", "Başarılı", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            Form2 form2 = new Form2();
+
+            form2.FormClosed += (s, args) => Application.Exit();
+            // form2 kapatılınca tüm uygulamanın durması için ekledik.
+
+            form2.Show();
+
+            this.Hide();
         }
 
 

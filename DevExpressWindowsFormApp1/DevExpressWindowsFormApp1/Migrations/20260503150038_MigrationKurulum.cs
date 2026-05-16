@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace DevExpressWindowsFormApp1.Migrations
 {
-    public partial class IlkKurulum : Migration
+    public partial class MigrationKurulum : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

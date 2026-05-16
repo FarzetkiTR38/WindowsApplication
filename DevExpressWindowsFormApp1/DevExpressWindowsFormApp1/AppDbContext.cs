@@ -11,8 +11,7 @@ namespace DevExpressWindowsFormApp1
         {
             // MSSQL Bağlantı cümlen (Server ismini kendi bilgisayarındaki SQL adıyla değiştirmelisin)
             // SQL adın genelde '.' veya '.\SQLEXPRESS' şeklindedir.
-            string connectionString = @"Server=.\SQLEXPRESS;Database=BenimProjemDB;Trusted_Connection=True;";
-
+            string connectionString = @"Server=(localdb)\MSSQLLocalDB;Database=BenimProjemDB;Trusted_Connection=True;";// Server=(localdb)\\MSSQLLocalDB;Database=InanilmazYemeklerDb;Trusted_Connection=True;TrustServerCertificate=True;"
             optionsBuilder.UseSqlServer(connectionString);
         }
     }

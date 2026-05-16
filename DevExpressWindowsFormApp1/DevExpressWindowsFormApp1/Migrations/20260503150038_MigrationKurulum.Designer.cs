@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DevExpressWindowsFormApp1.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20260503132022_IlkKurulum")]
-    partial class IlkKurulum
+    [Migration("20260503150038_MigrationKurulum")]
+    partial class MigrationKurulum
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

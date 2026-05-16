@@ -52,7 +52,7 @@
             // 
             // PasswordTextEdit
             // 
-            this.PasswordTextEdit.Location = new System.Drawing.Point(215, 171);
+            this.PasswordTextEdit.Location = new System.Drawing.Point(267, 164);
             this.PasswordTextEdit.Name = "PasswordTextEdit";
             this.PasswordTextEdit.Size = new System.Drawing.Size(195, 22);
             this.PasswordTextEdit.TabIndex = 2;
@@ -60,7 +60,7 @@
             // 
             // PasswordAgainTextEdit
             // 
-            this.PasswordAgainTextEdit.Location = new System.Drawing.Point(215, 222);
+            this.PasswordAgainTextEdit.Location = new System.Drawing.Point(267, 215);
             this.PasswordAgainTextEdit.Name = "PasswordAgainTextEdit";
             this.PasswordAgainTextEdit.Size = new System.Drawing.Size(195, 22);
             this.PasswordAgainTextEdit.TabIndex = 3;
@@ -68,7 +68,7 @@
             // 
             // simpleButton1
             // 
-            this.simpleButton1.Location = new System.Drawing.Point(268, 317);
+            this.simpleButton1.Location = new System.Drawing.Point(320, 310);
             this.simpleButton1.Name = "simpleButton1";
             this.simpleButton1.Size = new System.Drawing.Size(94, 29);
             this.simpleButton1.TabIndex = 2;
@@ -77,7 +77,7 @@
             // 
             // PasswordLabel
             // 
-            this.PasswordLabel.Location = new System.Drawing.Point(215, 149);
+            this.PasswordLabel.Location = new System.Drawing.Point(267, 142);
             this.PasswordLabel.Name = "PasswordLabel";
             this.PasswordLabel.Size = new System.Drawing.Size(79, 16);
             this.PasswordLabel.TabIndex = 3;
@@ -86,7 +86,7 @@
             // 
             // PasswordAgainLabel
             // 
-            this.PasswordAgainLabel.Location = new System.Drawing.Point(215, 200);
+            this.PasswordAgainLabel.Location = new System.Drawing.Point(267, 193);
             this.PasswordAgainLabel.Name = "PasswordAgainLabel";
             this.PasswordAgainLabel.Size = new System.Drawing.Size(127, 16);
             this.PasswordAgainLabel.TabIndex = 4;
@@ -94,7 +94,7 @@
             // 
             // EpostaTextEdit
             // 
-            this.EpostaTextEdit.Location = new System.Drawing.Point(215, 118);
+            this.EpostaTextEdit.Location = new System.Drawing.Point(267, 111);
             this.EpostaTextEdit.Name = "EpostaTextEdit";
             this.EpostaTextEdit.Size = new System.Drawing.Size(195, 22);
             this.EpostaTextEdit.TabIndex = 1;
@@ -102,7 +102,7 @@
             // 
             // EpostaLabel
             // 
-            this.EpostaLabel.Location = new System.Drawing.Point(215, 96);
+            this.EpostaLabel.Location = new System.Drawing.Point(267, 89);
             this.EpostaLabel.Name = "EpostaLabel";
             this.EpostaLabel.Size = new System.Drawing.Size(48, 16);
             this.EpostaLabel.TabIndex = 6;
@@ -112,7 +112,7 @@
             // BirthDateEdit
             // 
             this.BirthDateEdit.EditValue = null;
-            this.BirthDateEdit.Location = new System.Drawing.Point(215, 273);
+            this.BirthDateEdit.Location = new System.Drawing.Point(267, 266);
             this.BirthDateEdit.Name = "BirthDateEdit";
             this.BirthDateEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -123,7 +123,7 @@
             // 
             // BirthDateLabel
             // 
-            this.BirthDateLabel.Location = new System.Drawing.Point(215, 251);
+            this.BirthDateLabel.Location = new System.Drawing.Point(267, 244);
             this.BirthDateLabel.Name = "BirthDateLabel";
             this.BirthDateLabel.Size = new System.Drawing.Size(82, 16);
             this.BirthDateLabel.TabIndex = 8;
@@ -131,7 +131,7 @@
             // 
             // UsernameLabel
             // 
-            this.UsernameLabel.Location = new System.Drawing.Point(215, 46);
+            this.UsernameLabel.Location = new System.Drawing.Point(267, 39);
             this.UsernameLabel.Name = "UsernameLabel";
             this.UsernameLabel.Size = new System.Drawing.Size(73, 16);
             this.UsernameLabel.TabIndex = 9;
@@ -140,7 +140,7 @@
             // 
             // UsernameTextEdit
             // 
-            this.UsernameTextEdit.Location = new System.Drawing.Point(215, 68);
+            this.UsernameTextEdit.Location = new System.Drawing.Point(267, 61);
             this.UsernameTextEdit.Name = "UsernameTextEdit";
             this.UsernameTextEdit.Size = new System.Drawing.Size(195, 22);
             this.UsernameTextEdit.TabIndex = 0;
@@ -150,7 +150,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(700, 450);
+            this.ClientSize = new System.Drawing.Size(718, 410);
             this.Controls.Add(this.UsernameTextEdit);
             this.Controls.Add(this.UsernameLabel);
             this.Controls.Add(this.BirthDateLabel);
